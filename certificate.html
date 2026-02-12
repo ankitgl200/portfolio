@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Cstyle.css">
+</head>
+<style>
+
+</style>
+
+<body>
+    <nav>
+        <div class="navbar">
+            <h1 class="name">Ankit <span>Ghugtyal</span></h1>
+
+
+            <!-- ADDED nav-menu CLASS -->
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a>
+                    <a href="#about" >About</a>
+                    <a href="#skill" id="main">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contacts">Contact</a>
+                </li>
+            </ul>
+            <button class="back" onclick="window.history.back()">Go Back</button>
+        </div>
+    </nav>
+
+
+    <div class="top-heading">
+        <h1>Certificates</h1>
+    </div>
+    <div class="certificate-box">
+        <div class="project">
+            <div>
+                <img src="My certificates/sql_intermediate- HACKERRANK.jpg" alt="" class="screenshot">
+            </div>
+            <div>
+                <p class="prjname">SQL Intermediate</p>
+                <p class="prjdesc">This certificate is awarded for completing the SQL Intermediate course on <span
+                        class="givenby">HackerRank</span>.</p>
+                <p class="knowmore" onclick="openPopup(this)"
+                    data-download="https://drive.google.com/uc?export=download&id=1eNMiRu5voWqkEpHuQtqg-szvOPz3-6uA">
+                    View Full</p>
+            </div>
+        </div>
+        <div class="project">
+            <div>
+                <img src="My certificates/sqlbasic-HACKERRANK.jpg" alt="" class="screenshot">
+            </div>
+            <div>
+                <p class="prjname">SQL Basic</p>
+                <p class="prjdesc">This certificate is awarded for completing the SQL Basic course on <span
+                        class="givenby">HackerRank</span>.</p>
+                <p class="knowmore" onclick="openPopup(this)"
+                    data-download="https://drive.google.com/uc?export=download&id=1Ao71imnaIzHwC5UM3v_UgwmCOccEvdHo">
+                    View Full</p>
+            </div>
+        </div>
+
+
+        <div class="project">
+            <div>
+                <img src="My certificates/Introduction_to_Programming-CODESPRINT.jpg" alt="" class="screenshot">
+            </div>
+            <div>
+                <p class="prjname">Introduction to Programming</p>
+                <p class="prjdesc">This certificate is awarded for completing the Introduction to Programming course on
+                    <span class="givenby">CodeSprint</span>.
+                </p>
+                <p class="knowmore" onclick="openPopup(this)"
+                    data-download="https://drive.google.com/uc?export=download&id=1Qs0GtTpTvYsqF6RZ1VxAAcqC2K0muBcA">
+                    View Full</p>
+            </div>
+        </div>
+
+
+
+        <div class="project">
+            <div>
+                <img src="My certificates/Web_Development-CODESPRINT.jpg" alt="" class="screenshot">
+            </div>
+            <div>
+                <p class="prjname">Web Development</p>
+                <p class="prjdesc">This certificate is awarded for completing the Web Development course on <span
+                        class="givenby">CodeSprint</span>.</p>
+                <p class="knowmore" onclick="openPopup(this)"
+                    data-download="https://drive.google.com/uc?export=download&id=1Ntd7-m43ffXNAhh-bWKA1Wqi3rjQ2bi7">
+                    View Full</p>
+            </div>
+        </div>
+
+        <div class="project">
+            <div>
+                <img src="My certificates/Modern Web Development-UDEMY.jpg" alt="" class="screenshot">
+            </div>
+            <div>
+                <p class="prjname">Ultimate Web Development</p>
+                <p class="prjdesc">This certificate is awarded for completing the Ultimate Web Development course on
+                    <span class="givenby">Udemy</span>.
+                </p>
+                <p class="knowmore" onclick="openPopup(this)"
+                    data-download="https://drive.google.com/uc?export=download&id=1Qc25sKKbVgKwnFjuAR-JIKHqVkovA3mT">
+                    View Full</p>
+            </div>
+        </div>
+
+
+
+
+
+        <!-- popup box -->
+
+        <div id="popup" class="popup">
+            <div class="popup-box">
+                <img class="certificate-image" alt="" height="70vh" width="80vh">
+                <div class="popup-btns">
+                    <a class="dwld-btn">Download</a>
+                    <button onclick="closePopup()" class="close-btn">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+</body>
+<script>
+    function openPopup(button) {
+        // Find the parent project card
+        const card = button.closest(".project");
+
+        // Find the image inside that card
+        const img = card.querySelector(".screenshot");
+
+        // Set popup image to that image
+        const popupImg = document.querySelector(".certificate-image");
+        popupImg.src = img.src;
+
+
+        // Set download link
+        const downloadLink = button.getAttribute("data-download");
+        const popupDownloadBtn = document.querySelector(".dwld-btn");
+        popupDownloadBtn.href = downloadLink;
+
+        // Show popup
+        document.getElementById("popup").style.display = "flex";
+    }
+
+    function closePopup() {
+        document.getElementById("popup").style.display = "none";
+    }
+</script>
+
+</html>

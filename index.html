@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ankit's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<style>
+</style>
+
+<body>
+    <!-- ====================Top/Navbar==================== -->
+    <!-- top/navbar/hero section -->
+    <header>
+        <nav>
+            <div class="navbar">
+                <h1 class="name">Ankit <span>Ghugtyal</span></h1>
+                <!-- ADDED nav-menu CLASS -->
+                <ul class="nav-menu">
+                    <li><a href="#hero">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#skill">Skills</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#contacts">Contact</a>
+                        <a href="#Profile">Profile</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+<!-- ==================== hero section ==================== -->
+
+        <div id="hero">
+            <section class="hero">
+                <div class="left-box">
+                    <h2 class="greet">Welcome</h2>
+                    <h2 class="greet-name">I'm Ankit Ghugtyal</h2>
+                    <p class="desc">Web Developer | Student</p>
+                    <div class="btns">
+                        <a href="Used images/Resume_Ankit.pdf" onclick="alert('Downloading....')" download  class="linkbtn">Resume</a>
+                        <a href="#contacts" class="linkbtn">Contact Me</a>
+                    </div>
+                </div>
+                <div class="right-box">
+                    <div class="img">
+                        <img src="Used images/profile.jpg" alt="profile img">
+                    </div>
+                </div>
+            </section>
+        </div>
+    </header>
+
+    <!-- About/Skills/Projects/Contact -->
+
+    <main>
+        <section class="about mainHeading" id="about">
+            <h2 class="top-heading">About</h2>
+            <p class="my-description">
+                Hello! I'm<span class="highlight"> Ankit Ghugtyal</span>, a passionate coder and Computer Science
+                Engineering student. I’m deeply interested in technology and innovation, and my goal is to become a
+                skilled Machine Learning Engineer. I love exploring new concepts, learning continuously, and building
+                things that make an impact.
+            </p>
+            <!-- <p class="knowmore" id="about" onclick="goto()">Know more About Me.</p> -->
+            <p class="knowmore" id="about" onclick="goto(this)">Know more About Me.</p>
+
+        </section>
+
+
+        <section class="mainHeading" id="skill">
+            <div class="skill-bok">
+                <h2 class="top-heading">Skill</h2>
+                <div class="skills">
+                    <p class="skill"><img src="Used images/html.png" alt="htmllogo" class="skillicon">HTML</p>
+                    <p class="skill"><img src="Used images/css.png" alt="htmllogo" class="skillicon">CSS</p>
+                    <p class="skill"><img src="Used images/js.png" alt="htmllogo" class="skillicon">JavaScript</p>
+                    <p class="skill"><img src="Used images/python.png" alt="htmllogo" class="skillicon">Python</p>
+                    <p class="skill"><img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGGT_pnMHJdps9fGjcDaFSqcfFxO2E7BQk4g&s"
+                            alt="htmllogo" class="skillicon">MySql</p>
+                </div>
+                <div>
+                    <p class="knowmore" id="certificate" onclick="goto(this)">My Certificates.</p>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="mainHeading" id="projects">
+            <h2 class="top-heading">Projects</h2>
+            <p class="pdesc">Best 3 Project's.</p>
+            <div class="projects">
+                <div class="project">
+                    <img src="Used images/moviefactory.png" alt="moviefactory-image" class="screenshot">
+                    <h3 class="prjname">Movie Factory</h3>
+                    <p class="prjdesc">A Site to watch movies for free.</p>
+                    <a href="https://ankitgl200.github.io/moviefactory/index.html" class="sitelink">Visit site</a>
+                </div>
+                <div class="project">
+                    <img src="Used images/guidance.png" alt="moviefactory-image" class="screenshot">
+                    <h3 class="prjname">AI Carrer Guider</h3>
+                    <p class="prjdesc">An AI Carrer guidance site that gives free guidance to Rural Students.</p>
+                    <a href="https://ankitgl200.github.io/Guidance/" class="sitelink">Visit site</a>
+                </div>
+                <div class="project">
+                    <img src="Used images/quiz.png" alt="moviefactory-image" class="screenshot">
+                    <h3 class="prjname">Quiz compition</h3>
+                    <p class="prjdesc">A webpage designed for college on Uttarakhand Foundation Day for quiz and debate
+                        compition</p>
+                    <a href="https://ufdy.vercel.app/" class="sitelink">Visit site</a>
+                </div>
+            </div>
+            <p class="knowmore" id="project" onclick="goto(this)">All Projects.</p>
+        </section>
+
+        <section class="mainHeading" id="contacts">
+            <h2 class="top-heading">Contact</h2>
+            <p class="head-desc">Let's work together </p>
+            <div class="contact-link">
+                <a href="https://wa.me/918218325600">WhatsApp</a>
+                <a href="tel:8218325600">Contact</a>
+                <a href="mailto:ankitgtyl@gmail.com">Email</a>
+            </div>
+        </section>
+
+        <section class="mainHeading" id="Profile">
+            <h2 class="top-heading">Profile</h2>
+            <p class="head-desc">Get my other profiles </p>
+            <div class="contact-link">
+                <a href="https://www.linkedin.com/in/ankit-ghugtyal-a54b173a6/" target="_blank">Linkedin</a>
+                <a href="https://www.hackerrank.com/profile/ukankitpro" target="_blank">HackerRank</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <section class="last">
+            <p class="copy1">&copy; 2025 Ankit Ghugtyal. All rights reserved.</p>
+            <p class="copy1 update-date">Last Updated: 12-02-2026</p>
+            <p class="copy2">Built with ❤️ using HTML, CSS, and JS</p>
+        </section>
+    </footer>
+
+
+</body>
+<script>
+
+    function goto(p) {
+        let id = p.id;
+
+        if (id === "certificate") {
+            window.location.href = "certificate.html";
+        }
+        else if (id === "about") {
+            window.location.href = "about.html";
+        }
+        else if (id === "project") {
+            alert("Will be added soon");
+            // window.location.href = "project.html";
+        }
+        else {
+            alert("No Page found");
+        }
+    }
+
+</script>
+
+</html>
